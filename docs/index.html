@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>iLoveGnomes.com - Viking Gnome Plushies</title>
-    <script async src="https://js.stripe.com/v3/buy-button.js">
-    </script>
+    <script src="scripts/utm-tracker.js"></script>
     <meta name="google-site-verification" content="TyIeEUXJBYkHGu9Sh0xitHdYQs2FrD_SUlWuwi_TGiQ" />
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-BEJJHR2XPV"></script>
@@ -82,13 +81,20 @@
             color: #555;
         }
 
-        .BuyButton-ButtonText {
-            color: white !important;
+        .gnome-card button {
+            background-color: #e07a5f;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.3s;
         }
-
         .gnome-card button:hover {
             background-color: #d06648;
         }
+
         footer {
             background-color: #4a7c59;
             color: white;
@@ -123,11 +129,9 @@
             The fearless leader of the Viking gnomes, Thor wields the mighty Hammer of Snuggles. He’s the ultimate protector
             of comfort.
         </p>
-        <stripe-buy-button
-                buy-button-id="buy_btn_1QPremG6XmcFP3AqQicqraQl"
-                publishable-key="pk_live_51QMwOgG6XmcFP3AqPzRNCkFCawERXv7APTGIdebBw7MQdbPiIYopgwBypK7r60aybewOmziATxd7zMfxYJ3itKcu00WfpISbMu"
-        >
-        </stripe-buy-button>
+        <a href="https://buy.stripe.com/9AQ7tufJ5b6Z7zGfZ5">
+            <button>Adopt Thor $15</button>
+        </a>
     </div>
 
     <!-- Gnome 2 -->
@@ -138,11 +142,9 @@
             Known for his clever tricks and love of adventure, Loki will keep you laughing and ensure no dull moments.
             Perfect for those who appreciate a little mischief!
         </p>
-        <stripe-buy-button
-                buy-button-id="buy_btn_1QPrfcG6XmcFP3AqJj1ppgBW"
-                publishable-key="pk_live_51QMwOgG6XmcFP3AqPzRNCkFCawERXv7APTGIdebBw7MQdbPiIYopgwBypK7r60aybewOmziATxd7zMfxYJ3itKcu00WfpISbMu"
-        >
-        </stripe-buy-button>
+        <a href="https://buy.stripe.com/6oEbJKeF11wp7zGdQY">
+            <button>Adopt Loki $15</button>
+        </a>
     </div>
 
     <!-- Gnome 3 -->
@@ -153,11 +155,9 @@
             Fierce yet kind, Freya is the heart of the Viking crew. She embodies loyalty and warmth, making her an irresistible
             companion for gnome enthusiasts.
         </p>
-        <stripe-buy-button
-                buy-button-id="buy_btn_1QPrg5G6XmcFP3AqWCaFCjSh"
-                publishable-key="pk_live_51QMwOgG6XmcFP3AqPzRNCkFCawERXv7APTGIdebBw7MQdbPiIYopgwBypK7r60aybewOmziATxd7zMfxYJ3itKcu00WfpISbMu"
-        >
-        </stripe-buy-button>
+        <a href="https://buy.stripe.com/5kA5lm9kH6QJ1bi7sB">
+            <button>Adopt Freya $15</button>
+        </a>
     </div>
 
     <!-- Bundle -->
@@ -167,11 +167,9 @@
         <p>
             Collect them all at once to have the full clan in your home.
         </p>
-        <stripe-buy-button
-                buy-button-id="buy_btn_1QPrgcG6XmcFP3AqmluA35VH"
-                publishable-key="pk_live_51QMwOgG6XmcFP3AqPzRNCkFCawERXv7APTGIdebBw7MQdbPiIYopgwBypK7r60aybewOmziATxd7zMfxYJ3itKcu00WfpISbMu"
-        >
-        </stripe-buy-button>
+        <a href="https://buy.stripe.com/fZe7tu68v5MF3jqdR0">
+            <button>Adopt the clan $40</button>
+        </a>
     </div>
 </section>
 
